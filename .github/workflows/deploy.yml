@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: Clone Quartz and build site
+      - name: Clone Quartz and copy content
         run: |
           git clone https://github.com/jackyzha0/quartz.git temp_quartz
           cd temp_quartz
@@ -31,8 +31,7 @@ jobs:
           # Возвращаемся в корневую директорию
           cd ..
           
-      - name: Create and run content copying script
-        run: |
+          # Создаем и запускаем скрипт копирования контента
           cat > copy_content.sh << 'EOF'
           #!/bin/bash
           # Максимальная длина имени файла
@@ -97,26 +96,8 @@ jobs:
           npx quartz build
           cp -r public ../public
           
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: public
-          path: public/
-          retention-days: 7
-          
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    if: github.ref == 'refs/heads/main'
-    
-    steps:
-      - name: Download build artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: public
-          path: public
-          
       - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
