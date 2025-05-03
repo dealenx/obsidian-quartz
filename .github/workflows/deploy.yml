@@ -80,7 +80,7 @@ jobs:
           for img in *.{png,jpg,jpeg,gif,svg,webp}; do
             if [ -f "$img" ]; then
               target_img=$(shorten_filename "$img")
-              cp "$img" "temp_quartz/content/assets/$target_img" || echo "Не удалось скопировать $img"
+              cp "$img" "temp_quartz/content/$target_img" || echo "Не удалось скопировать $img"
             fi
           done
           
