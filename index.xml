@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Quartz 4</title>
+      <link>https://quartz.jzhao.xyz</link>
+      <description>Last 10 notes on Quartz 4</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Моя заметка в папке inbox</title>
+    <link>https://quartz.jzhao.xyz/inbox/%D0%9C%D0%BE%D1%8F-%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B0-%D0%B2-%D0%BF%D0%B0%D0%BF%D0%BA%D0%B5-inbox</link>
+    <guid>https://quartz.jzhao.xyz/inbox/%D0%9C%D0%BE%D1%8F-%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B0-%D0%B2-%D0%BF%D0%B0%D0%BF%D0%BA%D0%B5-inbox</guid>
+    <description> Поднебесные зубы, Кемеровская область.</description>
+    <pubDate>Sat, 03 May 2025 22:13:35 GMT</pubDate>
+  </item><item>
+    <title>README</title>
+    <link>https://quartz.jzhao.xyz/README</link>
+    <guid>https://quartz.jzhao.xyz/README</guid>
+    <description>obsidian-quartz.</description>
+    <pubDate>Sat, 03 May 2025 22:13:35 GMT</pubDate>
+  </item><item>
+    <title>index</title>
+    <link>https://quartz.jzhao.xyz/</link>
+    <guid>https://quartz.jzhao.xyz/</guid>
+    <description>Моя цифровая библиотека\n\nДобро пожаловать в мою цифровую библиотеку, созданную с помощью Quartz.</description>
+    <pubDate>Wed, 23 Aug 2023 19:09:04 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
